@@ -1,6 +1,6 @@
 # Diagramas
 
-See project (here)[[here](https://diagramas-no-apropiativo.netlify.app/)]
+See project [here](https://diagramas-no-apropiativo.netlify.app/)
 
 ##More
 
