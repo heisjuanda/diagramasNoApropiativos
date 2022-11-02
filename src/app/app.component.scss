@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
+
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0.5vw;
+  transition: 0.1s;
+  box-shadow: 0.21vw 0.21vw 0px wheat;
+  cursor: pointer;
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+button:hover {
+  background-color: rgba(240, 255, 255, 0.295);
+}
+
+button:active {
+  margin-top: 5%;
+  margin-left: 5%;
+  box-shadow: 0px 0px 0px wheat;
+  background-color: rgba(125, 172, 241, 0.24);
+
+  p {
+    text-shadow: 0px 0px 8px white;
+  }
+}
+
+input {
+  box-shadow: 5px 5px 0px wheat;
+  transition: 0.2s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input:hover {
+  margin-left: 1%;
+  margin-top: 1%;
+  box-shadow: 0px 0px 0px wheat;
+}
+
+label {
+  text-shadow: 2px 2px 0px wheat;
+}
+
+
+.nombreLabel {
+  grid-area: nombreL;
+}
+
+.nombreInput {
+  grid-area: nombreI;
+
+  input {
+    width: 8vw;
+  }
+}
+
+.rafagasLabel {
+  grid-area: rafagasL;
+}
+
+.rafagasInput {
+  grid-area: rafagasI;
+
+  input {
+    width: 8vw;
+  }
+}
+
+.llegadaLabel {
+  grid-area: llegadaL;
+}
+
+.llegadaInput {
+  grid-area: llegadaI;
+
+  input {
+    width: 8vw;
+  }
+}
+
+.prioridadLabel {
+  grid-area: prioridadL;
+}
+
+.prioridadInput {
+  grid-area: prioridadI;
+
+  input {
+    width: 8vw;
+  }
+}
+
+.createB {
+  grid-area: create;
+}
+
+.algoritmos {
+  grid-area: algoritmo;
+}
+
+.table1 {
+  display: grid;
+  grid-template-areas:
+    'nombreL rafagasL llegadaL prioridadL algoritmo create'
+    'nombreI rafagasI llegadaI prioridadI algoritmo create'
+  ;
+
+  .llegadaLabel {
+    width: 12vw;
+  }
+
+  div {
+    label {
+      font-size: 2vw;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      transition: 0.2s;
+    }
+
+    label:hover {
+      color: rgb(233, 105, 184);
+      text-shadow: 2px 2px 0px white;
+      letter-spacing: 0.1vw;
+    }
+
+    input {
+      border-radius: 0.5vw;
+      background-color: transparent;
+      color: white;
+      border-color: white;
+    }
+
+    button {
+      width: 100%;
+      height: 60%;
+
+      p {
+        font-size: 1vw;
+      }
+    }
+  }
+
+  .algoritmos {
+    width: 8vw;
+    label {
+      font-size: 1vw;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 1px 1px 0px wheat;
+    }
+
+    input {
+      box-shadow: 0px 0px 0px wheat;
+    }
+  }
+
+  justify-content: center;
+  width: 100%;
+  margin-top: 3%;
+  gap: 5%;
+}
+
+.calculateB {
+  grid-area: calculate;
+}
+
+.tableBoton {
+  display: grid;
+  grid-template-areas:
+    'calculate'
+  ;
+
+  div {
+    button {
+      p {
+        color: white;
+      }
+    }
+  }
+
+  justify-content: center;
+  width: 100%;
+  gap: 10%;
+  margin-top: 3%;
+}
+
+.nombreT,
+.uno {
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid white;
+}
+
+.llegadaT,
+.rafagaT,
+.entregaT,
+.respuestaT,
+.esperaT,
+.prioridadT,
+.dos,
+.tres,
+.cuatro,
+.cinco,
+.seis,
+.ocho {
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid white;
+  transition: 0.2s;
+}
+
+.uno:hover,
+.dos:hover,
+.tres:hover,
+.cuatro:hover,
+.cinco:hover,
+.seis:hover,
+.siete:hover,
+.ocho:hover {
+  background-color: rgba(3, 241, 229, 0.199);
+}
+
+.nombreT:hover,
+.llegadaT:hover,
+.rafagaT:hover,
+.prioridadT:hover,
+.entregaT:hover,
+.respuestaT:hover,
+.esperaT:hover,
+.esperaPromT:hover {
+  background-color: rgba(3, 66, 241, 0.199);
+}
+
+.esperaPromT,
+.siete {
+  transition: 0.2s;
+  border: none;
+}
+
+.table2 {
+  display: grid;
+  grid-template-rows: 8vw;
+  grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+
+  div {
+    text-align: center;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2vw;
+      text-shadow: 2px 2px 0px rgb(14, 71, 177);
+      color: rgb(91, 181, 233);
+      transition: 0.5s;
+    }
+
+    p:hover {
+      text-shadow: 2px 2px 0px rgb(231, 231, 231);
+      color: rgb(3, 241, 230);
+      letter-spacing: 0.2vw;
+    }
+  }
+
+  border: 4px solid white;
+  margin: 1%;
+  border-radius: 0.5vw;
+  box-shadow: 10px 5px 0px rgba(245, 222, 179, 0.548);
+  background-color: rgba(255, 255, 255, 0.185);
+}
+
+.table21 {
+  display: grid;
+  grid-template-rows: 8vw;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+
+  div {
+    text-align: center;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2vw;
+      text-shadow: 2px 2px 0px rgb(14, 71, 177);
+      color: rgb(91, 181, 233);
+      transition: 0.5s;
+    }
+
+    p:hover {
+      text-shadow: 2px 2px 0px rgb(231, 231, 231);
+      color: rgb(3, 241, 230);
+      letter-spacing: 0.2vw;
+    }
+  }
+
+  border: 4px solid white;
+  border-radius: 0.5vw;
+  box-shadow: 10px 5px 0px rgba(245, 222, 179, 0.548);
+  background-color: rgba(255, 255, 255, 0.185);
+  margin: 1%;
+}
+
+
+.tablaResultados1 {
+  display: grid;
+  grid-template-rows: 7vw;
+  grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+
+  div {
+    text-align: center;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2vw;
+      text-shadow: 2px 2px 0px rgb(98, 14, 177);
+      color: rgb(233, 91, 209);
+      transition: 0.5s;
+    }
+
+    p:hover {
+      text-shadow: 2px 2px 0px rgba(231, 231, 231, 0.438);
+      color: rgb(231, 49, 216);
+      letter-spacing: 0.2vw;
+    }
+  }
+
+  .uno {
+    p {
+      color: pink;
+    }
+  }
+
+  margin: 1%;
+  border: 3px solid white;
+  border-radius: 0.5vw;
+  box-shadow: 10px 5px 0px rgba(245, 222, 179, 0.548);
+  background-color: rgba(255, 255, 255, 0.185);
+}
+
+.tablaResultados2 {
+  display: grid;
+  grid-template-rows: 7vw;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+
+  div {
+    text-align: center;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2vw;
+      text-shadow: 2px 2px 0px rgb(98, 14, 177);
+      color: rgb(233, 91, 209);
+      transition: 0.5s;
+    }
+
+    p:hover {
+      text-shadow: 2px 2px 0px rgba(231, 231, 231, 0.466);
+      color: rgb(231, 49, 216);
+      letter-spacing: 0.2vw;
+    }
+  }
+
+  .uno {
+    p {
+      color: pink;
+    }
+  }
+
+  margin: 1%;
+  border: 3px solid white;
+  border-radius: 0.5vw;
+  box-shadow: 10px 5px 0px rgba(245, 222, 179, 0.548);
+  background-color: rgba(255, 255, 255, 0.185);
+}
+
+.nombreDeleteLabel {
+  grid-area: nombreDL;
+}
+
+.nombreDeleteInput {
+  grid-area: nombreDI;
+}
+
+.nombreDeleteButton {
+  grid-area: nombreDB;
+}
+
+.nombreDeleteButtonAll {
+  grid-area: nombreDBA;
+}
+
+.table3 {
+  display: grid;
+  grid-template-areas:
+    'nombreDL nombreDB nombreDBA'
+    'nombreDI nombreDB nombreDBA'
+  ;
+
+  div {
+    label {
+      font-size: 2vw;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      transition: 0.2s;
+    }
+
+    label:hover {
+      color: rgb(233, 105, 184);
+      text-shadow: 2px 2px 0px white;
+      letter-spacing: 0.1vw;
+    }
+
+    input {
+      border-radius: 0.5vw;
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      width: 10vw;
+    }
+
+    button {
+      p {
+        font-size: 1vw;
+      }
+
+      width: 100%;
+    }
+  }
+
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+}
+
+.created {
+  grid-area: title;
+}
+
+.insta {
+  grid-area: insta;
+}
+
+.github {
+  grid-area: git;
+}
+
+footer {
+  display: grid;
+  grid-template-areas:
+    'title title'
+    'insta git'
+  ;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h4 {
+    font-size: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30%;
+    transition: 0.5s;
+  }
+
+  h4:hover {
+    letter-spacing: 0.2vw;
+    text-shadow: 0.3vw 0.3vw 0vw wheat;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+
+  p:hover {
+    letter-spacing: 0.2vw;
+    text-shadow: 0.3vw 0.3vw 0vw wheat;
+  }
+
+  gap: 10%;
+  margin-top: 10%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 813px) {
+
+  button {
+    box-shadow: 0.6vw 0.6vw 0px wheat;
+    border: 1px solid white;
+
+    p {
+      font-size: 2vw;
+    }
+  }
+
+  input {
+    box-shadow: 0.5vw 0.5vw 0px wheat;
+    border: 1px solid white;
+  }
+
+  label {
+    text-shadow: 0.22vw 0.22vw 0px wheat;
+  }
+
+  .table1 {
+    width: 100vw;
+
+    div {
+      //border: 1px solid rgb(109, 226, 241);
+    }
+
+    .algoritmos {
+      width: 100%;
+      border: 1px solid transparent;
+
+      input {
+        width: 2vw;
+      }
+    }
+
+    button {
+      width: 8vw;
+      height: 6vw;
+    }
+
+    .createB {
+      height: 12vw;
+      width: 14vw;
+
+      button {
+        p {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+
+  .tableBoton {
+    margin-top: 5vw;
+
+    .calculateB {
+      width: 100%;
+
+      button {
+        width: 100%;
+        height: 10vw;
+
+        p {
+          font-size: 2vw;
+        }
+      }
+    }
+
+    margin-bottom: 5vw;
+  }
+
+  .table2 {
+    grid-template-rows: 15vw;
+
+    div {
+      p {
+        text-align: center;
+        transform: translateY(3vw);
+        font-size: 2.3vw;
+      }
+    }
+  }
+
+  .table21 {
+    grid-template-rows: 15vw;
+
+    div {
+      p {
+        text-align: center;
+        transform: translateY(3vw);
+        font-size: 2.1vw;
+      }
+    }
+  }
+
+  .tablaResultados1,
+  .tablaResultados2 {
+    grid-template-rows: 15vw;
+
+    div {
+      p {
+        text-align: center;
+        font-size: 4vw;
+        transform: translateY(1vw);
+      }
+    }
+  }
+
+  .table3 {
+    margin-top: 5vw;
+
+    .nombreDeleteButton,
+    .nombreDeleteButtonAll {
+      width: 14vw;
+      height: 12vw;
+
+      button {
+        margin-top: 10%;
+        width: 100%;
+        height: 90%;
+
+        p {
+          font-size: 2vw;
+        }
+      }
+    }
+
+    .nombreDeleteLabel,
+    .nombreDeleteInput {
+      transform: translateY(-2vw);
+    }
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .table1 {
+    .algoritmos {
+      width: 100%;
+      border: 1px solid transparent;
+
+      label {
+        font-size: 10px;
+      }
+    }
+  }
+
+  footer {
+    .created {
+      width: 100%;
+      h4 {
+        font-size: 5vw;
+      }
+    }
+    .insta,
+    .github {
+      p {
+        a {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .table1 {
+    .algoritmos {
+      width: 100%;
+      border: 1px solid transparent;
+
+      label {
+        font-size: 6px;
+      }
+    }
+  }
+
+  footer {
+    .created {
+      width: 100%;
+      h4 {
+        font-size: 3vw;
+      }
+    }
+    p {
+      font-size: 2vw;
+    }
+  }
+}
